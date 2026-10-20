@@ -1,0 +1,80 @@
+{
+  "server": {
+    "port": 3000
+  },
+  "tiktok": {
+    "username": "",
+    "processInitialData": false,
+    "reconnect": {
+      "baseDelaySec": 2,
+      "maxDelaySec": 60,
+      "offlineRetrySec": 30,
+      "rateLimitMinSec": 60
+    }
+  },
+  "round": {
+    "durationSec": 240,
+    "winnerScreenSec": 10,
+    "autoStart": true,
+    "autoRestart": true,
+    "maxHp": 1000
+  },
+  "join": {
+    "switchCooldownSec": 15,
+    "activeWindowMin": 15
+  },
+  "likes": {
+    "likesPerProjectile": 20,
+    "damage": 6,
+    "maxProjectilesPerSec": 3
+  },
+  "gifts": {
+    "bigMinCoins": 1,
+    "chiliMinCoins": 10,
+    "potMinCoins": 100,
+    "bigDamage": 30,
+    "chiliDamage": 120,
+    "potDamage": 120,
+    "maxMultiplier": 5,
+    "streakTimeoutSec": 15,
+    "alertMinCoins": 10
+  },
+  "social": {
+    "follow": "shield",
+    "share": "heal",
+    "shieldSec": 5,
+    "healPct": 3,
+    "followCooldownSec": 600,
+    "shareCooldownSec": 30
+  },
+  "limits": {
+    "maxPendingAttacks": 400,
+    "maxQueuedGifts": 50
+  },
+  "display": {
+    "maxProjectiles": 60,
+    "showComments": true
+  },
+  "sound": {
+    "volume": 0.6,
+    "hit": 0.5,
+    "gift": 0.8,
+    "win": 1
+  },
+  "moderation": {
+    "maxCommentLength": 80,
+    "maxNameLength": 20,
+    "bannedWords": []
+  },
+  "teams": [
+    { "code": "pe", "country": "Perú", "dish": "Ceviche", "image": "ceviche.svg", "color": "#E53935", "aliases": ["peru","peruano","peruana","peruanos"] },
+    { "code": "mx", "country": "México", "dish": "Tacos", "image": "tacos.svg", "color": "#2E7D32", "aliases": ["mexico","mejico","mexicano","mexicana","mexicanos"] },
+    { "code": "co", "country": "Colombia", "dish": "Bandeja paisa", "image": "bandeja-paisa.svg", "color": "#FDD835", "aliases": ["colombiano","colombiana","colombianos"] },
+    { "code": "ar", "country": "Argentina", "dish": "Choripán", "image": "choripan.svg", "color": "#4FC3F7", "aliases": ["argentino","argentinos","argenta"] },
+    { "code": "cl", "country": "Chile", "dish": "Empanada", "image": "empanada.svg", "color": "#1E63D6", "aliases": ["chileno","chilena","chilenos"] },
+    { "code": "ve", "country": "Venezuela", "dish": "Arepa", "image": "arepa.svg", "color": "#FF8F00", "aliases": ["venezolano","venezolana","venezolanos","vzla"] },
+    { "code": "ec", "country": "Ecuador", "dish": "Encebollado", "image": "encebollado.svg", "color": "#8E24AA", "aliases": ["ecuatoriano","ecuatoriana","ecuatorianos"] },
+    { "code": "bo", "country": "Bolivia", "dish": "Salteña", "image": "saltena.svg", "color": "#00897B", "aliases": ["boliviano","boliviana","bolivianos"] },
+    { "code": "br", "country": "Brasil", "dish": "Feijoada", "image": "feijoada.svg", "color": "#76FF03", "aliases": ["brazil","brasileño","brasileiro","brasileños"] }
+  ]
+}

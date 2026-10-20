@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <!-- Salteña (Bolivia). Reemplázalo por tu imagen con el mismo nombre de archivo. -->
+  <ellipse cx="128" cy="230" rx="96" ry="14" fill="#000" opacity=".25"/>
+  <ellipse cx="128" cy="206" rx="110" ry="26" fill="#f2f2f2" stroke="#2b1a12" stroke-width="6"/>
+  <!-- cuerpo -->
+  <path d="M30 168 Q24 96 128 78 Q232 96 226 168 Q222 212 128 214 Q34 212 30 168 Z" fill="#d9772f" stroke="#2b1a12" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M50 170 Q50 112 128 100 Q206 112 206 170" fill="none" stroke="#f0a05a" stroke-width="10" stroke-linecap="round" opacity=".7"/>
+  <!-- trenza de arriba -->
+  <g fill="#e8913f" stroke="#2b1a12" stroke-width="4">
+    <ellipse cx="62" cy="96" rx="14" ry="10" transform="rotate(-30 62 96)"/>
+    <ellipse cx="84" cy="82" rx="14" ry="10" transform="rotate(-20 84 82)"/>
+    <ellipse cx="108" cy="74" rx="14" ry="10" transform="rotate(-8 108 74)"/>
+    <ellipse cx="134" cy="72" rx="14" ry="10" transform="rotate(4 134 72)"/>
+    <ellipse cx="160" cy="76" rx="14" ry="10" transform="rotate(14 160 76)"/>
+    <ellipse cx="184" cy="86" rx="14" ry="10" transform="rotate(24 184 86)"/>
+    <ellipse cx="202" cy="100" rx="14" ry="10" transform="rotate(34 202 100)"/>
+  </g>
+  <g fill="#a34c17" opacity=".8"><circle cx="70" cy="180" r="4"/><circle cx="188" cy="186" r="4"/><circle cx="176" cy="126" r="3"/></g>
+  <g>
+    <ellipse cx="108" cy="146" rx="9" ry="12" fill="#2b1a12"/>
+    <circle cx="111" cy="142" r="3.5" fill="#fff"/>
+    <ellipse cx="148" cy="146" rx="9" ry="12" fill="#2b1a12"/>
+    <circle cx="151" cy="142" r="3.5" fill="#fff"/>
+    <path d="M114 166 Q128 178 142 166" fill="none" stroke="#2b1a12" stroke-width="5" stroke-linecap="round"/>
+    <ellipse cx="90" cy="164" rx="10" ry="6" fill="#ff7b8a" opacity=".7"/>
+    <ellipse cx="166" cy="164" rx="10" ry="6" fill="#ff7b8a" opacity=".7"/>
+  </g>
+</svg>

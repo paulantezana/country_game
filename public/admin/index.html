@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Panel · Batalla de Comida</title>
+  <link rel="stylesheet" href="/vendor/flag-icons/css/flag-icons.min.css">
+  <link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>🍲 Batalla de Comida <small>panel privado</small></h1>
+    <div class="pills">
+      <span class="pill" id="pill-server">Servidor: …</span>
+      <span class="pill" id="pill-screens">Pantallas: 0</span>
+      <span class="pill" id="pill-perf">FPS: —</span>
+      <span class="pill" id="pill-eps">Eventos/s: 0</span>
+      <a class="pill link" href="/game" target="_blank" rel="noopener">Abrir juego ↗</a>
+    </div>
+  </header>
+
+  <main class="grid">
+    <!-- TikTok -->
+    <section class="card" id="card-tiktok">
+      <h2>Conexión a TikTok LIVE</h2>
+      <form id="tiktok-form" class="row" autocomplete="off">
+        <span class="at">@</span>
+        <input id="tiktok-user" type="text" placeholder="usuario_que_esta_en_vivo" spellcheck="false" maxlength="40" aria-label="Usuario de TikTok">
+        <button type="submit" class="btn primary" id="btn-connect">Conectar</button>
+        <button type="button" class="btn" id="btn-disconnect">Desconectar</button>
+      </form>
+      <div class="status-line">
+        <span class="badge" id="tt-badge">desconectado</span>
+        <span id="tt-reason" class="muted"></span>
+      </div>
+      <dl class="facts" id="tt-facts"></dl>
+    </section>
+
+    <!-- Ronda -->
+    <section class="card" id="card-round">
+      <h2>Ronda</h2>
+      <div class="round-head">
+        <div><span class="big" id="round-num">—</span><span class="muted" id="round-phase"></span></div>
+        <div class="big mono" id="round-time">0:00</div>
+      </div>
+      <div class="row">
+        <button class="btn primary" data-cmd="round:start" id="btn-start">▶ Iniciar / reanudar</button>
+        <button class="btn" data-cmd="round:pause">⏸ Pausar</button>
+        <button class="btn warn" data-cmd="round:restart" data-confirm="¿Reiniciar la ronda actual? Se pierde el progreso de esta ronda.">↺ Reiniciar ronda</button>
+      </div>
+      <div id="team-bars" class="team-bars"></div>
+    </section>
+
+    <!-- Simulador -->
+    <section class="card wide" id="card-sim">
+      <h2>Simulador <small class="muted">(eventos falsos con el mismo formato que TikTok)</small></h2>
+      <div class="row">
+        <label>País
+          <select id="sim-team"><option value="">Al azar</option></select>
+        </label>
+        <button class="btn" data-sim="join" data-count="1">+ Unir jugador</button>
+        <button class="btn" data-sim="join" data-count="10">+ Unir 10</button>
+        <button class="btn" data-sim="likes" data-count="20">❤ 20 likes</button>
+        <button class="btn" data-sim="likes" data-count="100">❤ 100 likes</button>
+      </div>
+      <div class="row">
+        <button class="btn gift" data-sim="gift" data-tier="big" id="btn-gift-big">🎁 Regalo 1–9 (racha de rosas)</button>
+        <button class="btn gift" data-sim="gift" data-tier="chili" id="btn-gift-chili">🌶️ Regalo 10–99</button>
+        <button class="btn gift" data-sim="gift" data-tier="pot" id="btn-gift-pot">🍲 Regalo 100+</button>
+        <button class="btn" data-sim="follow">➕ Follow</button>
+        <button class="btn" data-sim="share">↗ Share</button>
+      </div>
+      <form class="row" id="sim-comment-form" autocomplete="off">
+        <input id="sim-comment" type="text" placeholder='Probar un comentario: "Perú", "!mx", "vamos chile"…' maxlength="80" aria-label="Comentario de prueba">
+        <button class="btn" type="submit">Enviar comentario</button>
+      </form>
+      <div class="row load">
+        <strong>Modo carga</strong>
+        <input id="load-count" type="number" min="1" max="2000" value="200" aria-label="Espectadores falsos">
+        <span class="muted">espectadores falsos</span>
+        <button class="btn primary" id="btn-load-start">Iniciar</button>
+        <button class="btn" id="btn-load-stop">Detener</button>
+        <span id="load-status" class="muted"></span>
+      </div>
+    </section>
+
+    <!-- Ajustes -->
+    <section class="card wide" id="card-settings">
+      <h2>Ajustes <small class="muted">(se guardan en config.json; duración y vida aplican desde la próxima ronda)</small></h2>
+      <form id="settings-form" autocomplete="off">
+        <div class="settings-grid" id="settings-grid"></div>
+        <div class="row">
+          <button class="btn primary" type="submit">Guardar ajustes</button>
+          <button class="btn" type="button" id="btn-settings-reset">Deshacer cambios</button>
+          <span id="settings-msg" class="muted"></span>
+        </div>
+      </form>
+    </section>
+
+    <!-- Ranking -->
+    <section class="card" id="card-ranking">
+      <h2>Ranking guardado</h2>
+      <p class="muted" id="rounds-played"></p>
+      <div class="two-col">
+        <div>
+          <h3>Rondas ganadas</h3>
+          <ol id="rank-countries" class="rank"></ol>
+        </div>
+        <div>
+          <h3>Top 10 jugadores</h3>
+          <ol id="rank-players" class="rank"></ol>
+        </div>
+      </div>
+      <button class="btn danger" data-cmd="stats:reset" data-confirm="¿Borrar rondas ganadas y ranking de jugadores? No se puede deshacer.">🗑 Reiniciar ranking</button>
+    </section>
+
+    <!-- Eventos -->
+    <section class="card" id="card-events">
+      <h2>Eventos recientes</h2>
+      <ol id="events" class="events"></ol>
+    </section>
+  </main>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script type="module" src="/admin/admin.js"></script>
+</body>
+</html>

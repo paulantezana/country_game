@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Batalla de Comida</title>
+  <link rel="stylesheet" href="/vendor/flag-icons/css/flag-icons.min.css">
+  <link rel="stylesheet" href="/game/game.css">
+</head>
+<body>
+  <div id="viewport">
+    <div id="stage">
+     <div id="shell">
+      <header id="top">
+        <h1 class="title">BATALLA <span>DE</span> COMIDA</h1>
+        <p class="cta">Comenta tu país para unirte</p>
+        <ul id="join-codes" aria-label="Códigos de países"></ul>
+      </header>
+
+      <div id="round-bar">
+        <div class="round" id="round-label">RONDA 1</div>
+        <div class="timer" id="timer">4:00</div>
+        <div class="players" id="players-total">👥 0</div>
+      </div>
+
+      <div id="arena-wrap">
+        <div id="arena"></div>
+        <div id="cells"></div>
+        <div id="center-banner" hidden></div>
+      </div>
+
+      <div id="alerts" aria-live="polite"></div>
+
+      <div id="ticker"></div>
+
+      <section id="hud">
+        <div class="panel" id="top-countries">
+          <h2>🏆 TOP PAÍSES</h2>
+          <ol></ol>
+        </div>
+        <div class="panel" id="top-players">
+          <h2>🔥 TOP JUGADORES</h2>
+          <ol></ol>
+        </div>
+      </section>
+
+      <div id="winner" hidden>
+        <div class="winner-box">
+          <div class="winner-kicker">¡FIN DE LA RONDA!</div>
+          <div class="winner-dish"><img alt=""></div>
+          <div class="winner-name"></div>
+          <div class="winner-sub"></div>
+          <div class="mvp" hidden>
+            <div class="mvp-label">⭐ MVP ⭐</div>
+            <div class="mvp-card"></div>
+          </div>
+          <ol class="winner-top"></ol>
+          <div class="winner-next"></div>
+        </div>
+      </div>
+
+      <div id="offline" hidden>Conectando con el servidor…</div>
+      <button id="sound-hint" type="button" hidden>🔊 Clic para activar el sonido</button>
+      <div id="debug" hidden></div>
+     </div>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/vendor/phaser/phaser.min.js"></script>
+  <script type="module" src="/game/js/main.js"></script>
+</body>
+</html>

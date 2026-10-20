@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256">
+  <!-- Tacos (México). Reemplázalo por tu imagen con el mismo nombre de archivo. -->
+  <defs>
+    <g id="taco">
+      <path d="M44 150 Q46 82 128 78 Q210 82 212 150 Z" fill="#8a4b23" stroke="#2b1a12" stroke-width="5" stroke-linejoin="round"/>
+      <g stroke="#2b1a12" stroke-width="3">
+        <circle cx="82" cy="104" r="10" fill="#e8402f"/>
+        <circle cx="172" cy="102" r="10" fill="#e8402f"/>
+        <circle cx="128" cy="90" r="9" fill="#e8402f"/>
+      </g>
+      <path d="M58 116 q12 -18 26 -4 q12 -18 26 -4 q12 -18 28 -4 q12 -18 26 -4 q12 -18 30 0" fill="#6cc04a" stroke="#2b5e1d" stroke-width="4" stroke-linejoin="round"/>
+      <g fill="#fff" stroke="#2b1a12" stroke-width="2">
+        <rect x="98" y="100" width="9" height="9" rx="2"/>
+        <rect x="148" y="96" width="9" height="9" rx="2"/>
+      </g>
+      <path d="M34 150 Q34 106 128 124 Q222 106 222 150 Q222 206 128 206 Q34 206 34 150 Z" fill="#ffd36b" stroke="#2b1a12" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M58 186 Q128 200 198 186" fill="none" stroke="#e5ad3d" stroke-width="5" stroke-linecap="round"/>
+    </g>
+  </defs>
+  <ellipse cx="128" cy="230" rx="104" ry="14" fill="#000" opacity=".25"/>
+  <ellipse cx="128" cy="204" rx="116" ry="28" fill="#f2f2f2" stroke="#2b1a12" stroke-width="6"/>
+  <use href="#taco" xlink:href="#taco" transform="translate(-14 52) rotate(-16 128 150) scale(.62)"/>
+  <use href="#taco" xlink:href="#taco" transform="translate(110 46) rotate(16 128 150) scale(.62)"/>
+  <use href="#taco" xlink:href="#taco" transform="translate(26 18) scale(.8)"/>
+  <g>
+    <ellipse cx="110" cy="152" rx="8" ry="11" fill="#2b1a12"/>
+    <circle cx="113" cy="148" r="3" fill="#fff"/>
+    <ellipse cx="146" cy="152" rx="8" ry="11" fill="#2b1a12"/>
+    <circle cx="149" cy="148" r="3" fill="#fff"/>
+    <path d="M116 168 Q128 179 140 168" fill="none" stroke="#2b1a12" stroke-width="5" stroke-linecap="round"/>
+    <ellipse cx="94" cy="166" rx="9" ry="5" fill="#ff7b8a" opacity=".7"/>
+    <ellipse cx="162" cy="166" rx="9" ry="5" fill="#ff7b8a" opacity=".7"/>
+  </g>
+  <path d="M196 222 A20 20 0 0 1 234 206 Z" fill="#8bd14b" stroke="#2b1a12" stroke-width="4" stroke-linejoin="round"/>
+</svg>

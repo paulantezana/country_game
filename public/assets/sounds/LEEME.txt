@@ -1,0 +1,13 @@
+Sonidos propios (opcional)
+
+Si pones aquí archivos .mp3 con estos nombres, el juego los usa en lugar de los sonidos generados:
+
+  hit.mp3      golpe de proyectil chico
+  bigHit.mp3   golpe grande / plato eliminado
+  gift.mp3     llega un regalo
+  pot.mp3      olla gigante
+  win.mp3      fin de ronda (victoria)
+  join.mp3     alguien se une a un país
+
+El volumen de cada uno se ajusta en el panel (/admin → Ajustes → Pantalla y sonido)
+o en config.json, sección "sound". Recarga la página del juego después de copiar archivos.

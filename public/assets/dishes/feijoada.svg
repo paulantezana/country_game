@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <!-- Feijoada (Brasil). Reemplázalo por tu imagen con el mismo nombre de archivo. -->
+  <ellipse cx="128" cy="230" rx="100" ry="14" fill="#000" opacity=".25"/>
+  <!-- olla de barro -->
+  <g stroke="#2b1a12" stroke-width="6" stroke-linejoin="round">
+    <rect x="4" y="112" width="30" height="20" rx="8" fill="#8a4a2b"/>
+    <rect x="222" y="112" width="30" height="20" rx="8" fill="#8a4a2b"/>
+    <path d="M26 112 Q30 222 128 224 Q226 222 230 112 Z" fill="#a85a32"/>
+    <ellipse cx="128" cy="112" rx="104" ry="32" fill="#c46a3a"/>
+  </g>
+  <ellipse cx="128" cy="115" rx="90" ry="23" fill="#2a1a1f"/>
+  <g fill="#4a2a33">
+    <ellipse cx="80" cy="112" rx="7" ry="5"/><ellipse cx="100" cy="122" rx="7" ry="5"/><ellipse cx="150" cy="124" rx="7" ry="5"/>
+    <ellipse cx="176" cy="110" rx="7" ry="5"/><ellipse cx="124" cy="104" rx="7" ry="5"/><ellipse cx="196" cy="122" rx="6" ry="4"/>
+  </g>
+  <g stroke="#2b1a12" stroke-width="4">
+    <rect x="104" y="98" width="34" height="16" rx="8" fill="#c0392b" transform="rotate(-14 121 106)"/>
+    <circle cx="66" cy="120" r="10" fill="#e07a5f"/>
+    <circle cx="166" cy="100" r="9" fill="#e07a5f"/>
+    <!-- rodaja de naranja -->
+    <circle cx="206" cy="92" r="20" fill="#ff9f1c"/>
+  </g>
+  <g stroke="#ffd59a" stroke-width="2.5"><path d="M206 74 v36"/><path d="M188 92 h36"/><path d="M193 79 l26 26"/><path d="M219 79 l-26 26"/></g>
+  <circle cx="206" cy="92" r="20" fill="none" stroke="#2b1a12" stroke-width="4"/>
+  <g fill="#e8c88a"><circle cx="90" cy="102" r="3"/><circle cx="140" cy="118" r="3"/><circle cx="114" cy="126" r="2.5"/></g>
+  <g>
+    <ellipse cx="106" cy="170" rx="9" ry="12" fill="#2b1a12"/>
+    <circle cx="109" cy="166" r="3.5" fill="#fff"/>
+    <ellipse cx="150" cy="170" rx="9" ry="12" fill="#2b1a12"/>
+    <circle cx="153" cy="166" r="3.5" fill="#fff"/>
+    <path d="M112 190 Q128 204 144 190" fill="none" stroke="#2b1a12" stroke-width="5" stroke-linecap="round"/>
+    <ellipse cx="90" cy="188" rx="10" ry="6" fill="#ff8a7a" opacity=".7"/>
+    <ellipse cx="166" cy="188" rx="10" ry="6" fill="#ff8a7a" opacity=".7"/>
+  </g>
+</svg>

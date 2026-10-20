@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 128">
+  <!-- Ají picante (proyectil del ataque especial) -->
+  <path d="M30 6 q4 10 2 18" fill="none" stroke="#1f5e2a" stroke-width="6" stroke-linecap="round"/>
+  <path d="M18 24 q14 -10 28 0 q4 6 0 10 h-28 q-4 -4 0 -10z" fill="#3fa34d" stroke="#1f3d17" stroke-width="3"/>
+  <path d="M18 32 Q8 70 26 104 Q34 122 40 118 Q44 112 42 96 Q50 60 46 32 Z" fill="#e53120" stroke="#5c0f08" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M26 42 Q20 70 30 96" fill="none" stroke="#ff8a7a" stroke-width="5" stroke-linecap="round" opacity=".8"/>
+</svg>
